@@ -1,0 +1,55 @@
+Name: Daniel Le
+
+
+
+Sources Referenced
+These are the following sources I used to help me complete this assignment
+Most of the functions I've written were simply based off the starter code given to us and modified.
+
+Mark Allen Weiss, Data structures and algorithm analysis in C++, 4th Edition, Pearson Education,
+2014.
+
+tutorialspoint.com
+https://www.tutorialspoint.com/data_structures_algorithms/avl_tree_algorithm.htm
+
+Abdul Bari 10.1 AVL Tree - Insertion and Rotations
+https://www.youtube.com/watch?v=jDM6_TnYIqE&ab_channel=AbdulBari
+
+Wikipedia
+https://en.wikipedia.org/wiki/AVL_tree
+
+/*****************************************************************************************************************/
+
+// i. What Parts did you complete?
+For this assignment I completed all parts except the last part. I completed Part 1, Part 2, and Part 2b. I did not complete part 2.3.
+I mainly created functions based off the starter code given. These functions had simmilar logic to the start code, but were modified to achieve additonal functionality like
+maintaining counter variables.
+
+// ii. What bugs did you encounter?
+I've encountered many bugs. One bug was processing the data from the text files, specifically processing and 
+not ignoring irrelevent lines. For example in the rebase210.txt file, there were some lines that were irrelevent or empty. What I did to ignore them was
+I created a if statement to see if my lines were empty, if they were continue the loop. For the lines that weren't empty but irelevent, they were implicitly solved by by logic to parse the lines.
+
+Another bug I encountered was not correctly querying the correct number of nodes in my tree. 
+This was because I was inserting empty nodes, nodes whose, atleast one field was empty. 
+To solve this I made sure no fields were empty before inserting.
+
+Another bug I got was not skipping "every other line" properly when reading the sequences.txt. I just read every even instead of odd and got the right result.
+
+
+// iii.
+1)Download all source code in a single directory
+2)Make sure you are running on linux
+3)In the terminal, go to the directory where all all the code is in
+4)Type 'make clean'
+5)Type 'make all'
+6)Make sure you have the necessary .txt files in the same directory for the following insturctions 7-9
+7) To run 2.1, in the terminal run ./query_tree rebase210.txt 
+8) To run 2b , in the terminal run ./test_tree rebase210.txt sequences.txt
+9) To run 2.3, in the terminal run ./test_tree_mod rebase210.txt sequences.txt
+
+// iv.
+INPUT files
+-rebase210.txt
+-sequences.txt
+-input_part2.1.txt

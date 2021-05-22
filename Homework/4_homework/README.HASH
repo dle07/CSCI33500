@@ -1,0 +1,42 @@
+Author: Daniel Le
+
+For testing the double hash function, use an R Value of 97.
+
+Sources Referenced
+These are the following sources I used to help me complete this assignment
+Most of the functions I've written were simply based off the starter code given to us and modified.
+
+Mark Allen Weiss, Data structures and algorithm analysis in C++, 4th Edition, Pearson Education,
+2014.
+
+https://www.geeksforgeeks.org/hashing-set-3-open-addressing/
+
+https://en.wikipedia.org/wiki/Double_hashing#:~:text=Double%20hashing%20is%20a%20computer,data%20structure%20on%20a%20table%20.
+
+https://www.google.com/search?q=quadratic+probing&rlz=1C1CHBF_enUS904US904&ei=y7psYMSvE6u-ggeA97aADA&oq=quadratic+probing&gs_lcp=Cgdnd3Mtd2l6EAMyCggAELEDEIMBEEMyBAgAEEMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoHCAAQRxCwAzoHCAAQsAMQQzoFCAAQsQM6CwguELEDEMcBEKMCOggIABCxAxCDAToFCC4QsQM6BwgAELEDEENQ2AdYyyJg_SJoAnACeAOAAbMBiAGrF5IBBTE0LjE1mAEAoAEBqgEHZ3dzLXdperABAMgBCsABAQ&sclient=gws-wiz&ved=0ahUKEwiEwYOqservAhUrn-AKHYC7DcAQ4dUDCA0&uact=5
+
+Abdul Bari Hashing
+https://www.youtube.com/watch?v=mFY0J5W8Udk
+
+1) For this assignment I completed all the parts. The whole assignment was completed
+2) Some bugs I've encounted was segmentation faults which resulted in not appropriately modding the hash value by the table size.
+   Another bug was not being able to modify class variables due to const restrictions applied to functions. To go around this I either included the keyword mutable or removed the const entirely
+
+3)To run this program, download all files. Make sure you're on linux and run the following commands
+In the console type make clean
+Then run make all
+Then choose which table you want to test against which files using the following templates below.
+
+./create_and_test_hash <words file name> <query words file name> <flag>
+
+./create_and_test_hash words.txt query_words.txt quadratic
+
+./create_and_test_hash words.txt query_words.txt double R
+
+//For spell checker...
+./spell_check <document file> <dictionary file>
+
+4)Input files are all .txt files, they're dictionary files and document files that contain query words.
+Ex: document1.txt, query_words.txt, words.txt, wordsEnglish.txt
+
+There are no output files..

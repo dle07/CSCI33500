@@ -1,0 +1,36 @@
+0 0
+(7, 10) 
+Enter a sequence of points (integer)
+
+Output1: 
+(7, 4) (3, 5) (19, 71) 
+Enter a sequence of points (integer)
+
+Output2: 
+(100, 101) (2, 3) (40, 50) (11, 33) 
+After copy constructor1 c{a}: 
+(7, 4) (3, 5) (19, 71) 
+(7, 4) (3, 5) (19, 71) 
+After assignment a = b
+(100, 101) (2, 3) (40, 50) (11, 33) 
+After e = move(c) 
+(7, 4) (3, 5) (19, 71) 
+()
+After a = move(e) 
+(7, 4) (3, 5) (19, 71) 
+(100, 101) (2, 3) (40, 50) (11, 33) 
+
+// Part 2
+Enter a sequence of points (double)  // 3 2.1 20.3 11.11 12.45 13.1 14.2
+(2.1, 20.3) (11.11, 12.45) (13.1, 14.2) 
+
+Enter a sequence of points (double)  // 2 1.1 100 20.1 30.2
+(1.1, 100) (20.1, 30.2) 
+
+Result of a + b
+(3.2, 120.3) (31.21, 42.65) (13.1, 14.2) 
+
+Result of d = a + b
+(3.2, 120.3) (31.21, 42.65) (13.1, 14.2) 
+Second element in a: 
+11.11, 12.45

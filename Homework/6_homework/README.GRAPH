@@ -1,0 +1,36 @@
+Author: Daniel Le
+
+
+Resources referenced: 
+
+    Mark Allen Weiss, Data structures and algorithm analysis in C++, 4th Edition, Pearson Education,
+2014.
+
+    William Fiset's video on Djikstra's algorithm 
+    https://www.youtube.com/watch?v=pSqmAO-m7Lk
+
+    https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+
+
+I)
+I completed all parts of the assignment. All required parts were implemented.
+
+II)
+Some bugs I've encountered was segfaults, I didn't properly access parts of my vector which caused the bug.
+Another bug I encountered was not writing the function signature properly when overloading the < operator for the weighted edge that was to be put into the heap.
+I solved this by adding a const keyword to it to ensure that nothing was to be changed.
+
+III)
+1)Download all files 
+2)Go into bash and go into the directory of the files
+3)To run part 1, run this command 
+    g++ CreateGraphAndTest.cc -o CreateGraphAndTest
+Then run this command choosing your graphfile and query file ~ ./CreateGraphAndTest <GRAPH_FILE> <ADJACENCY_QUERYFILE>
+Ex: ./CreateGraphAndTest Graph1.txt AdjacencyQueries1.txt
+
+    To run part 2, run this command 
+        g++ FindPaths.cc -o FindPaths
+Then run this command choosing your graphfile and starting vertex in this form 
+        ./FindPaths <GRAPH_FILE> <STARTING_VERTEX>
+Ex: ./FindPaths Graph2.txt 1
+Ex: ./FindPaths Graph2.txt 5

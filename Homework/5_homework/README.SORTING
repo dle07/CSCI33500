@@ -1,0 +1,35 @@
+Author: Daniel Le
+
+Sources Referencd ~ 
+
+Mark Allen Weiss, Data structures and algorithm analysis in C++, 4th Edition, Pearson Education,
+2014.
+
+https://www.geeksforgeeks.org/quick-sort/
+
+Mycodeschool quicksort
+https://www.youtube.com/watch?v=COk73cpQbFQ
+
+
+https://www.geeksforgeeks.org/heap-sort/#:~:text=Heap%20sort%20is%20a%20comparison,process%20for%20the%20remaining%20elements.
+
+
+D.I)
+I completed all parts of the assignment.
+
+D.II)
+One I've encountered was not matching function paramaters when calling some functions. This is a realatively easy to fix bug.
+Another bug I encountered was my quicksort with a pivot of middle and first not working correctly. This was because the increments of i and j pointer weren't appropriately incremented and decremented because the pivot of middle and first are different from median pivots.
+For the median pivot, we know that the left and right elements are already in their right spots, thus we use ++i and --j. However for the middle and first, no such information is known so we have to becareful with how we increment the i and j pointers.
+
+D.III)
+1) Go to the directory that contains all the files.
+2)Make sure you are in Linux.
+3)Run the following command in the terminal~
+g++ test_sorting_algorithms.cc -o test_sorting_algorithms
+
+4) Then you can run
+./test_sorting_algorithms <input_type> <input_size> <comparison_type>
+where <input_type> is either random, sorted_small_to_large or sorted_large_to_small
+<input_size> is a non negative integer
+<comparison_type> is either less or greater 
